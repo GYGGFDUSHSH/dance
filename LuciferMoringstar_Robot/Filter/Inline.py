@@ -87,15 +87,6 @@ async def answer(bot, query):
                            switch_pm_parameter="okay")
 
 
-def get_reply_markup(query):
-    buttons = [[
-        InlineKeyboardButton('Deploy Video', url=f'{TUTORIAL}')
-        ],[
-        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
-        ]]
-    return InlineKeyboardMarkup(buttons)
-
-
 def get_size(size):
     """Get size in readable format"""
 
